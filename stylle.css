@@ -1,0 +1,312 @@
+.pilar {
+  display: flex; /* Usar flexbox para alinhar a imagem e o texto lado a lado */
+  align-items: flex-start; /* Alinhar os itens no início */
+  gap: 40px; /* Espaçamento entre a imagem e o texto */
+  margin: 7vw 18vh 0vw 0vh; /* Margens conforme necessário */
+}
+
+.pilar.par {
+  flex-direction: row-reverse; /* Inverte a ordem dos itens */
+}
+
+.img2 {
+  flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.img-img {
+  width: 600px; /* Largura da imagem */
+  height: auto; /* Manter a proporção da imagem */
+  border-radius: 16px; /* Bordas arredondadas */
+}
+
+.texto {
+  max-width: 600px; /* Largura máxima do texto */
+}
+
+#subtitulo-pilares {
+  margin-bottom: 16px;
+}
+
+#texto-pilares {
+  margin: 4px 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: #022548; /* Azul claro */
+    color: #333;
+}
+.nav {
+    background-color: #022548;
+    width: 100%;
+    height: 10%;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 1em 0;
+    box-sizing: border-box;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 3vh;
+    font-family: "Garamond", sans-serif;
+    margin: 0 1em;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0vh 4vw 0vh 4vw;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    padding: 10px;
+    display: none;
+    list-style-type: none;
+    width: 100%; /* Garante que o menu ocupe toda a largura */
+    text-align: center; /* Centraliza o conteúdo dentro do menu */
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%; /* Faz com que o link ocupe toda a largura do item */
+    height: 3.2vh;
+    display: inline-block; /* Permite centralizar o conteúdo */
+    text-align: center; /* Centraliza o texto do link */
+    margin: 0vh 5vw 0vh 0vw;
+  }
+  
+  
+  
+  .dropdown-menu li a:hover {
+    background-color: #6f4e37;
+    width: 100%;
+    text-align: center;
+  
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Title Styling */
+  #titulo {
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 3vh 0;
+  }
+  
+  /* Site Title Styling */
+  #sitetitulo {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Tamanho e peso da fonte para destaque */
+    color: #fdfdfc; /* Escolha uma cor sofisticada */
+    text-align: center;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1200px) {
+    /* Adjust styles for large tablets and smaller desktops */
+    .nav {
+      height: 8%;
+    }
+  
+    #titulo {
+      font-size: 8vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust styles for tablets and mobile devices */
+    .nav {
+      height: 12%;
+      padding: 0.5em 0;
+    }
+  
+    .menu a {
+      font-size: 0.9rem;
+      margin: 0 0.5em;
+    }
+  
+    #titulo {
+      font-size: 6vw;
+    }
+  
+    #sitetitulo {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust styles for very small screens */
+    .nav {
+      height: 15%;
+      padding: 0.5em 0;
+    }
+  
+    .menu a {
+      font-size: 0.8rem;
+      margin: 0 0.3em;
+    }
+  
+    #titulo {
+      font-size: 5vw;
+    }
+  
+    #sitetitulo {
+      font-size: 1.8em;
+    }
+  }
+
+.banner {
+    margin-bottom: 2vh; /* Espaçamento abaixo da banner */
+}
+
+
+#pilares {
+    margin-bottom: 4vh; /* Espaçamento abaixo da seção de missão */
+    background-color: #003366; /* Azul escuro */
+    width: 98vw; /* Largura da viewport */
+    max-width: 1500px; /* Largura máxima para telas grandes */
+    border-radius: 8px;
+    padding: 2vw; /* Espaçamento interno em vw */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-pilares {
+    color: #ffffff; /* Branco */
+    margin-bottom: 1vh; /* Espaçamento abaixo do título */
+}
+
+#subtitulo-pilares {
+  
+    color: #82b9de; /* Azul claro */
+    margin-bottom: 1vh; /* Espaçamento abaixo do subtítulo */
+}
+
+#texto-pilares {
+    color: #ffffff; /* Branco */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; /* Tamanho da fonte em vw */
+    margin-bottom: 2vh; /* Espaçamento abaixo do texto */
+}
+
+#missao {
+    margin-bottom: 4vh; /* Espaçamento abaixo da seção de missão */
+    background-color: white; /* Branco */
+    border-radius: 8px;
+    padding: 2vw; /* Espaçamento interno em vw */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-missao {
+    color: #003366; /* Azul escuro */
+    margin-bottom: 1vh; /* Espaçamento abaixo do título */
+}
+
+#texto-missao {
+    color: #003366; /* Azul escuro */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; /* Tamanho da fonte em vw */
+    margin-bottom: 2vh; /* Espaçamento abaixo do texto */
+}
+
+#visao {
+    margin-bottom: 4vh; /* Espaçamento abaixo da seção de visão */
+    background-color: #003366; /* Azul escuro */
+    border-radius: 8px;
+    padding: 2vw; /* Espaçamento interno em vw */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-visao {
+    color: #ffffff; /* Branco */
+    margin-bottom: 1vh; /* Espaçamento abaixo do título */
+}
+
+#subtitulo-visao {
+    color: #82b9de; /* Azul claro */
+    margin-bottom: 1vh; /* Espaçamento abaixo do subtítulo */
+}
+
+#texto-visao {
+    color: #ffffff; /* Branco */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; /* Tamanho da fonte em vw */}
+
+    .valores-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 40px; /* Espaçamento abaixo da seção de valores */
+    }
+    
+    .valor {
+        width: 200px; /* Largura do círculo */
+        height: 200px; /* Altura do círculo */
+        border-radius: 50%; /* Faz o elemento ser um círculo */
+        background-color: #003366; /* Azul escuro */
+        border: 2px solid #007acc; /* Azul claro */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px; /* Tamanho da fonte */
+        color: rgb(255, 255, 255); /* Texto branco para círculos azuis */
+        margin: 10px; /* Espaçamento entre os círculos */
+        opacity: 0; /* Inicialmente invisível */
+        transform: translateY(20px); /* Para animação */
+        transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    }
+    
+    .valor.visible {
+        opacity: 1; /* Visível quando a classe é adicionada */
+        transform: translateY(0); /* Retorna à posição original */
+        
+    }
+    
+    .valor:nth-child(even) {
+        background-color: white; /* Branco para círculos pares */
+        color: #003366; /* Texto azul escuro para círculos brancos */
+    }
+    
+    /* Efeito de desfoque */
+    .valores-container .valor:not(:hover) {
+        filter: blur(4px); /* Desfoca círculos que não estão em foco */
+        transition: filter 0.3s ease; /* Transição suave para o desfoque */
+    }
+    
+    .valor:hover {
+        filter: none; /* Remove o desfoque do círculo em foco */
+    }
